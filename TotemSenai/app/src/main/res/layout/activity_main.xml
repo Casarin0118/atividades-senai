@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextureView que ocupa a tela toda -->
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Conteúdo sobre o vídeo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#E7291D"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:height="75dp"
+            android:backgroundTint="#DE1515"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Conheça nossos cursos"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="34sp"
+            app:cornerRadius="40dp" />
+
+    </LinearLayout>
+</FrameLayout>
