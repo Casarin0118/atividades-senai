@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta de CEP"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtCep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu CEP"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar CEP"
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/textViewEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seu endereço é:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvInformacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto em Fala</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Texto em Fala</h1>
+        <h2>Transforme qualquer texto em áudio</h2>
+
+        <div class="language-selector">
+            <label for="language">Idioma:</label>
+            <select id="language">
+                {% for code, name in languages.items() %}
+                <option value="{{ code }}" {% if code == 'pt' %}selected{% endif %}>{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <textarea class="text-input" placeholder="Digite ou cole seu texto aqui..."></textarea>
+
+        <div class="buttons">
+            <button class="listen-btn">Ouvir Texto</button>
+            <button class="download-btn">Baixar Áudio</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
